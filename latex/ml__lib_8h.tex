@@ -1,0 +1,179 @@
+\hypertarget{ml__lib_8h}{}\doxysection{Riferimenti per il file /\+Users/giovanni/\+Desktop/\+ML\+\_\+\+V1/\+ML\+\_\+\+V1/ml\+\_\+lib.h}
+\label{ml__lib_8h}\index{/Users/giovanni/Desktop/ML\_V1/ML\_V1/ml\_lib.h@{/Users/giovanni/Desktop/ML\_V1/ML\_V1/ml\_lib.h}}
+
+
+Header della libreria ml\+\_\+lib.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcella}{cella}}
+\item 
+struct \mbox{\hyperlink{structpunto}{punto}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ml__lib_8h_ac6f18a9e1d00b4637522b1b469a92021}\label{ml__lib_8h_ac6f18a9e1d00b4637522b1b469a92021}} 
+\#define {\bfseries ROW}~7
+\item 
+\mbox{\Hypertarget{ml__lib_8h_ab00f2b8e8bad4307cf0775a5520cf663}\label{ml__lib_8h_ab00f2b8e8bad4307cf0775a5520cf663}} 
+\#define {\bfseries COL}~7
+\end{DoxyCompactItemize}
+\doxysubsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structcella}{cella}} \mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}}
+\item 
+typedef struct \mbox{\hyperlink{structpunto}{punto}} \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Tipi enumerati (enum)}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}} \{ {\bfseries Umano}
+, {\bfseries Ai}
+ \}
+\item 
+enum \mbox{\hyperlink{ml__lib_8h_a25f6e8adc446355e3f42092ecf9d598c}{gr}} \{ {\bfseries Soldier}
+, {\bfseries Officer}
+ \}
+\item 
+enum \mbox{\hyperlink{ml__lib_8h_a4ca269cf93df1b512b52174c1a256fe5}{dir}} \{ {\bfseries Up}
+, {\bfseries Down}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___ausiliarie_gabbdcb7fca0fe313ecc63bc2ba1a73d8e}{set\+\_\+id\+\_\+player}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$p, \mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}} value)
+\begin{DoxyCompactList}\small\item\em Imposta l\textquotesingle{}id\+\_\+player {\itshape value} della pedina indicata dal puntatore {\itshape $\ast$p}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}} \mbox{\hyperlink{group___ausiliarie_gaeebe06189e2bd221a0e65b7d15f6b1b5}{get\+\_\+id\+\_\+player}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Ritorna {\itshape id\+\_\+player} dalla pedina {\itshape $\ast$p} specificata. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___ausiliarie_ga39c663b743546e37a5bbb2f9d1adfd2b}{set\+\_\+board\+\_\+value}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p, \mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$value)
+\begin{DoxyCompactList}\small\item\em Imposta la pedina {\itshape value} nella posizione {\itshape x} , {\itshape y} nella scacchiera {\itshape board}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$ \mbox{\hyperlink{group___ausiliarie_gacbcceb01143b3098ac3ee65642d94a35}{get\+\_\+board\+\_\+value}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Ritorna la {\itshape pedina} contenuta nella posizione {\itshape x} , {\itshape y} di {\itshape board}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$ \mbox{\hyperlink{group___ausiliarie_ga7abcaeb9a9964698ffa11f5f86805909}{get\+\_\+board\+\_\+value\+\_\+immediate}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Ritorna la {\itshape pedina} contenuta nella posizione {\itshape x} , {\itshape y} di {\itshape board}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$ \mbox{\hyperlink{group___ausiliarie_ga1e5f458cec21fb109ef5cff56b57f389}{get\+\_\+board\+\_\+value\+\_\+middle}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Ritorna la {\itshape pedina} \char`\"{}middle\char`\"{} contenuta nella posizione {\itshape x} , {\itshape y} di {\itshape board}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$ \mbox{\hyperlink{group___ausiliarie_gacde6d4e847576a401af96d1d84733533}{get\+\_\+board\+\_\+value\+\_\+down}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Ritorna la {\itshape pedina} \char`\"{}down\char`\"{} contenuta nella posizione {\itshape x}, {\itshape y} di {\itshape board}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___ausiliarie_ga663d3a2fcf86042d03eb834766b7adea}{set\+\_\+grade}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$p, \mbox{\hyperlink{ml__lib_8h_a25f6e8adc446355e3f42092ecf9d598c}{gr}} value)
+\begin{DoxyCompactList}\small\item\em Imposta il grado {\itshape value} della pedina indicata dal puntatore {\itshape p}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a25f6e8adc446355e3f42092ecf9d598c}{gr}} \mbox{\hyperlink{group___ausiliarie_ga6ceb2e2fb4d39456d2b64b64f4841c67}{get\+\_\+grade}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Ritorna il grado {\itshape value} della pedina indicata dal puntatore {\itshape p}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___ausiliarie_ga4b841e4128740b9fa11d44d180891c13}{is\+\_\+inside}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Indica se {\itshape x}, \textbackslash{}ay è dentro alla scacchiera. \end{DoxyCompactList}\item 
+int {\bfseries right\+\_\+path} (\mbox{\hyperlink{ml__lib_8h_a4ca269cf93df1b512b52174c1a256fe5}{dir}} direction, \mbox{\hyperlink{ml__lib_8h_a25f6e8adc446355e3f42092ecf9d598c}{gr}} grade, \mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}} player)
+\item 
+int \mbox{\hyperlink{group___ausiliarie_ga91afc9e4c2346f1ec103f49db8dbe120}{is\+\_\+valid\+\_\+letter}} (char input)
+\begin{DoxyCompactList}\small\item\em Verifica che input sia una lettera. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___ausiliarie_ga5c86a430960ee2966594c15c0274c3a5}{is\+\_\+valid\+\_\+number}} (char input)
+\begin{DoxyCompactList}\small\item\em Verifica che input sia un numero. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___ausiliarie_ga934cd52cb22c3138965a1ed6cf28b93c}{is\+\_\+valid\+\_\+input}} (char input\mbox{[}5\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifica che la stringa in input sia valida. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} \mbox{\hyperlink{group___ausiliarie_gaa4ac4a8fb827cc4ddb366f948d2ddab9}{add\+\_\+point}} (\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} l)
+\begin{DoxyCompactList}\small\item\em Modifica lo stato di un punto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$ \mbox{\hyperlink{group___memoria_gab9607896ed7aebf86c8a7ac51fe5a618}{create\+Matrix}} (void)
+\begin{DoxyCompactList}\small\item\em Funzione che crea la matrice della scacchiera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$ {\bfseries clone\+Matrix} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}})
+\item 
+void \mbox{\hyperlink{group___memoria_ga898a4ffd57725b4666aa768ca71f1e1f}{destroy\+Matrix}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}})
+\begin{DoxyCompactList}\small\item\em Distrugge la matrice della scacchiera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___memoria_ga421a28d47106a4070c6eea92c1401821}{fill\+Board}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}})
+\begin{DoxyCompactList}\small\item\em Riempie la scacchiera con le pedine. \end{DoxyCompactList}\item 
+int {\bfseries catch\+Input} (int $\ast$cord)
+\item 
+void \mbox{\hyperlink{group___output_ga724261d45664de95115edbec3fec7aef}{print\+Pedina}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Stampa una lettera rappresentante la pedina. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___output_gac5423849c2701b9adbd33225a8a20288}{print\+Matrix}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}})
+\begin{DoxyCompactList}\small\item\em Stampa la scacchiera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___output_gab1b6c72fb86f8d1c4537fec2456e4c78}{print\+Status}} (int turn)
+\begin{DoxyCompactList}\small\item\em Stampa lo stato del gioco. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___output_ga24e7114025f82d3a3a186743a6e5799f}{print\+Rules}} (void)
+\begin{DoxyCompactList}\small\item\em Stampa le regole del gioco. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___output_ga126ef35a3cacdc550c03a737bf1311bf}{victory}} (\mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}} winner)
+\begin{DoxyCompactList}\small\item\em Schermata di vittoria. \end{DoxyCompactList}\item 
+void {\bfseries move\+Error} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, int cord\mbox{[}4\mbox{]}, int turn)
+\item 
+void {\bfseries input\+Error} (int cord\mbox{[}4\mbox{]})
+\item 
+int \mbox{\hyperlink{group___logiche_ga1d493fc60e6ea052243bc1c0e0c20adc}{is\+\_\+same\+\_\+team}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} a, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} b)
+\begin{DoxyCompactList}\small\item\em Verifica che due pedine siano della stessa squadra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga9bbb95ac94db737e2095fc03a7eb2cef}{is\+\_\+legal\+\_\+player}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, int turn)
+\begin{DoxyCompactList}\small\item\em Verifica che il giocatore sia corretto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga0519397afc131ba8216279b7c8d6c5cc}{is\+\_\+empty}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} x)
+\begin{DoxyCompactList}\small\item\em Verifica che casella sia vuota. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_gae7e726a728c55ba691bb6c1462c71989}{is\+\_\+full}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} x)
+\begin{DoxyCompactList}\small\item\em Verifica che casella sia piena. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_gad76287dc287b54276099f0887d416caa}{is\+\_\+valid\+\_\+distance}} (\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Verifica che la validità della lunghezza della mossa. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga344630622a81e477d50fe7824da45500}{is\+\_\+valid\+\_\+move}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to, int turn)
+\begin{DoxyCompactList}\small\item\em Verifica che la mossa selezionata sia legale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___logiche_ga849f32b6994fbb1190073cde39703ee4}{increase\+\_\+grade}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} soldier)
+\begin{DoxyCompactList}\small\item\em Verifica che la pedina soldier sia sa promuovere. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga0b5b57b74dd64318663e80224db22a29}{is\+Winner}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}} player)
+\begin{DoxyCompactList}\small\item\em Verifica che il giocatore {\itshape player} abbia vinto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga8ca66b4e8b4e7f4511943aac8edde162}{is\+Forbidden\+Cell}} (\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Verifica che la cella sia accessibile. \end{DoxyCompactList}\item 
+int {\bfseries my\+\_\+move} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to, int turn)
+\item 
+int \mbox{\hyperlink{group___logiche_gabcbd7b41508ab908b601d6607330190f}{distance}} (\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Restituisce un codice che descrive la lunghezza della mossa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___logiche_ga373ce247f8d712b22dd6db6b5aaeb77c}{capture}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Esegue la cattura delle pedine. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga92e065216878c6972f25bb40cede5a3f}{grade\+Check}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Verifica che la mossa selezionata sia compatibile con il grado della pedina. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_gae47a85e51124bf1b5569559ba5718bb6}{can\+\_\+eat}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Verifica la possibilità di mangiare. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga8cc7e93c7f87a22d21412b3ca1f942e6}{can\+\_\+move}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Verifica la possibilità di muoversi. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_gaf5deae59415fab0cf7de74362d4b56e6}{exist\+Mandatory}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Controlla la presenza di mosse obbligatorie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Header della libreria ml\+\_\+lib. 
+
+Questo file contiene le definizioni di tutte le strutture e delle funzioni che compongono la libreria ml\+\_\+lib 
+
+\doxysubsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\mbox{\Hypertarget{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}\label{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}} 
+\index{ml\_lib.h@{ml\_lib.h}!pedina@{pedina}}
+\index{pedina@{pedina}!ml\_lib.h@{ml\_lib.h}}
+\doxysubsubsection{\texorpdfstring{pedina}{pedina}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structcella}{cella}} \mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}}}
+
+Rinominazione del tipo struct cella in pedina, per praticità di scrittura \mbox{\Hypertarget{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}\label{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}} 
+\index{ml\_lib.h@{ml\_lib.h}!point@{point}}
+\index{point@{point}!ml\_lib.h@{ml\_lib.h}}
+\doxysubsubsection{\texorpdfstring{point}{point}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpunto}{punto}} \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}
+
+Rinominazione del tipo struct punto in point, per praticità di scrittura 
+
+\doxysubsection{Documentazione dei tipi enumerati}
+\mbox{\Hypertarget{ml__lib_8h_a4ca269cf93df1b512b52174c1a256fe5}\label{ml__lib_8h_a4ca269cf93df1b512b52174c1a256fe5}} 
+\index{ml\_lib.h@{ml\_lib.h}!dir@{dir}}
+\index{dir@{dir}!ml\_lib.h@{ml\_lib.h}}
+\doxysubsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ml__lib_8h_a4ca269cf93df1b512b52174c1a256fe5}{dir}}}
+
+Definizione della direzione \mbox{\Hypertarget{ml__lib_8h_a25f6e8adc446355e3f42092ecf9d598c}\label{ml__lib_8h_a25f6e8adc446355e3f42092ecf9d598c}} 
+\index{ml\_lib.h@{ml\_lib.h}!gr@{gr}}
+\index{gr@{gr}!ml\_lib.h@{ml\_lib.h}}
+\doxysubsubsection{\texorpdfstring{gr}{gr}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ml__lib_8h_a25f6e8adc446355e3f42092ecf9d598c}{gr}}}
+
+Definizione dei due possibili gradi della pedina \mbox{\Hypertarget{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}\label{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}} 
+\index{ml\_lib.h@{ml\_lib.h}!id\_p@{id\_p}}
+\index{id\_p@{id\_p}!ml\_lib.h@{ml\_lib.h}}
+\doxysubsubsection{\texorpdfstring{id\_p}{id\_p}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}}}
+
+Definizione dei due giocatori esistenti 

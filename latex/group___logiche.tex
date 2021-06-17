@@ -1,0 +1,314 @@
+\hypertarget{group___logiche}{}\doxysection{Funzioni delle logiche di gioco}
+\label{group___logiche}\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___logiche_ga1d493fc60e6ea052243bc1c0e0c20adc}{is\+\_\+same\+\_\+team}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} a, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} b)
+\begin{DoxyCompactList}\small\item\em Verifica che due pedine siano della stessa squadra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga9bbb95ac94db737e2095fc03a7eb2cef}{is\+\_\+legal\+\_\+player}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, int turn)
+\begin{DoxyCompactList}\small\item\em Verifica che il giocatore sia corretto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga0519397afc131ba8216279b7c8d6c5cc}{is\+\_\+empty}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} x)
+\begin{DoxyCompactList}\small\item\em Verifica che casella sia vuota. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_gae7e726a728c55ba691bb6c1462c71989}{is\+\_\+full}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} x)
+\begin{DoxyCompactList}\small\item\em Verifica che casella sia piena. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_gad76287dc287b54276099f0887d416caa}{is\+\_\+valid\+\_\+distance}} (\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Verifica che la validità della lunghezza della mossa. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga344630622a81e477d50fe7824da45500}{is\+\_\+valid\+\_\+move}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to, int turn)
+\begin{DoxyCompactList}\small\item\em Verifica che la mossa selezionata sia legale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___logiche_ga849f32b6994fbb1190073cde39703ee4}{increase\+\_\+grade}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} soldier)
+\begin{DoxyCompactList}\small\item\em Verifica che la pedina soldier sia sa promuovere. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga0b5b57b74dd64318663e80224db22a29}{is\+Winner}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}} player)
+\begin{DoxyCompactList}\small\item\em Verifica che il giocatore {\itshape player} abbia vinto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga8ca66b4e8b4e7f4511943aac8edde162}{is\+Forbidden\+Cell}} (\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Verifica che la cella sia accessibile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group___logiche_gac0ab070447e0245797db89513aac7464}\label{group___logiche_gac0ab070447e0245797db89513aac7464}} 
+int {\bfseries my\+\_\+move} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to, int turn)
+\item 
+int \mbox{\hyperlink{group___logiche_gabcbd7b41508ab908b601d6607330190f}{distance}} (\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Restituisce un codice che descrive la lunghezza della mossa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___logiche_ga373ce247f8d712b22dd6db6b5aaeb77c}{capture}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Esegue la cattura delle pedine. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga92e065216878c6972f25bb40cede5a3f}{grade\+Check}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Verifica che la mossa selezionata sia compatibile con il grado della pedina. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_gae47a85e51124bf1b5569559ba5718bb6}{can\+\_\+eat}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Verifica la possibilità di mangiare. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_ga8cc7e93c7f87a22d21412b3ca1f942e6}{can\+\_\+move}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} p)
+\begin{DoxyCompactList}\small\item\em Verifica la possibilità di muoversi. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___logiche_gaf5deae59415fab0cf7de74362d4b56e6}{exist\+Mandatory}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} from, \mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}} to)
+\begin{DoxyCompactList}\small\item\em Controlla la presenza di mosse obbligatorie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{group___logiche_gae47a85e51124bf1b5569559ba5718bb6}\label{group___logiche_gae47a85e51124bf1b5569559ba5718bb6}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!can\_eat@{can\_eat}}
+\index{can\_eat@{can\_eat}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{can\_eat()}{can\_eat()}}
+{\footnotesize\ttfamily int can\+\_\+eat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Verifica la possibilità di mangiare. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em p} & punto in cui si trova la pedina nella scacchiera\\
+\hline
+\end{DoxyParams}
+Verifica la possibilità della pedina in {\itshape x} , {\itshape y} di mangiare le pedine avversarie intorno a sé \mbox{\Hypertarget{group___logiche_ga8cc7e93c7f87a22d21412b3ca1f942e6}\label{group___logiche_ga8cc7e93c7f87a22d21412b3ca1f942e6}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!can\_move@{can\_move}}
+\index{can\_move@{can\_move}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{can\_move()}{can\_move()}}
+{\footnotesize\ttfamily int can\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Verifica la possibilità di muoversi. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em p} & punto in cui si trova la pedina nella scacchiera\\
+\hline
+\end{DoxyParams}
+Verifica la possibilità della pedina in {\itshape x} , {\itshape y} di muoversi nelle caselle adiacenti \mbox{\Hypertarget{group___logiche_ga373ce247f8d712b22dd6db6b5aaeb77c}\label{group___logiche_ga373ce247f8d712b22dd6db6b5aaeb77c}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!capture@{capture}}
+\index{capture@{capture}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{capture()}{capture()}}
+{\footnotesize\ttfamily void capture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{b,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{from,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{to }\end{DoxyParamCaption})}
+
+
+
+Esegue la cattura delle pedine. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em from} & punto di partenza della pedina \\
+\hline
+{\em to} & punto di arrivo della pedina\\
+\hline
+\end{DoxyParams}
+Questa funzione si occupa di catturare le pedine indicate. Si assume la correttezza delle coordinate inserite, la legalità della mossa è verificata nella funzione move(). \mbox{\Hypertarget{group___logiche_gabcbd7b41508ab908b601d6607330190f}\label{group___logiche_gabcbd7b41508ab908b601d6607330190f}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!distance@{distance}}
+\index{distance@{distance}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily int distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{from,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{to }\end{DoxyParamCaption})}
+
+
+
+Restituisce un codice che descrive la lunghezza della mossa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em from} & punto di partenza della pedina \\
+\hline
+{\em to} & punto di arrivo della pedina\\
+\hline
+\end{DoxyParams}
+Restituisce la distanza in modulo tra due punti nella matrice\+: Se è maggiore di 2, uguale a 0, o la destinazione è in una casella non accessibile restituisce il codice errore -\/1.
+
+Le coordinate inserite sono corrette (la destinazione non è una casella proibita). \mbox{\Hypertarget{group___logiche_gaf5deae59415fab0cf7de74362d4b56e6}\label{group___logiche_gaf5deae59415fab0cf7de74362d4b56e6}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!existMandatory@{existMandatory}}
+\index{existMandatory@{existMandatory}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{existMandatory()}{existMandatory()}}
+{\footnotesize\ttfamily int exist\+Mandatory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{from,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{to }\end{DoxyParamCaption})}
+
+
+
+Controlla la presenza di mosse obbligatorie. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em from} & punto di partenza della pedina \\
+\hline
+{\em to} & punto di arrivo della pedina\\
+\hline
+\end{DoxyParams}
+Verifica se, nel caso di non cattura, esiste una cattura obbligatoria da fare. Restituisce 1 se esiste una mossa obbligatoria non tentata, altrimenti 0. \mbox{\Hypertarget{group___logiche_ga92e065216878c6972f25bb40cede5a3f}\label{group___logiche_ga92e065216878c6972f25bb40cede5a3f}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!gradeCheck@{gradeCheck}}
+\index{gradeCheck@{gradeCheck}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{gradeCheck()}{gradeCheck()}}
+{\footnotesize\ttfamily int grade\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{from,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{to }\end{DoxyParamCaption})}
+
+
+
+Verifica che la mossa selezionata sia compatibile con il grado della pedina. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em from} & punto di partenza della pedina \\
+\hline
+{\em to} & punto di arrivo della pedina\\
+\hline
+\end{DoxyParams}
+Verifica il grado della pedina mossa\+: restituisce 1 se la mossa è consentita, 0 se non è consentita. \mbox{\Hypertarget{group___logiche_ga849f32b6994fbb1190073cde39703ee4}\label{group___logiche_ga849f32b6994fbb1190073cde39703ee4}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!increase\_grade@{increase\_grade}}
+\index{increase\_grade@{increase\_grade}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{increase\_grade()}{increase\_grade()}}
+{\footnotesize\ttfamily void increase\+\_\+grade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{soldier }\end{DoxyParamCaption})}
+
+
+
+Verifica che la pedina soldier sia sa promuovere. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em soldier} & pedina candidata alla promozione\\
+\hline
+\end{DoxyParams}
+Se la pedina soldier è nella condizione di essere promossa la promuove \mbox{\Hypertarget{group___logiche_ga0519397afc131ba8216279b7c8d6c5cc}\label{group___logiche_ga0519397afc131ba8216279b7c8d6c5cc}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!is\_empty@{is\_empty}}
+\index{is\_empty@{is\_empty}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{is\_empty()}{is\_empty()}}
+{\footnotesize\ttfamily int is\+\_\+empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Verifica che casella sia vuota. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em x} & punto di arrivo della pedina\\
+\hline
+\end{DoxyParams}
+Restituisce 1 se la casella è vuota, 0 altrimenti. \mbox{\Hypertarget{group___logiche_gae7e726a728c55ba691bb6c1462c71989}\label{group___logiche_gae7e726a728c55ba691bb6c1462c71989}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!is\_full@{is\_full}}
+\index{is\_full@{is\_full}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{is\_full()}{is\_full()}}
+{\footnotesize\ttfamily int is\+\_\+full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Verifica che casella sia piena. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em x} & punto di partenza della pedina\\
+\hline
+\end{DoxyParams}
+Restituisce 1 se la casella è piena, 0 altrimenti. \mbox{\Hypertarget{group___logiche_ga9bbb95ac94db737e2095fc03a7eb2cef}\label{group___logiche_ga9bbb95ac94db737e2095fc03a7eb2cef}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!is\_legal\_player@{is\_legal\_player}}
+\index{is\_legal\_player@{is\_legal\_player}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{is\_legal\_player()}{is\_legal\_player()}}
+{\footnotesize\ttfamily int is\+\_\+legal\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{from,  }\item[{int}]{turn }\end{DoxyParamCaption})}
+
+
+
+Verifica che il giocatore sia corretto. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em from} & punto di partenza della pedina \\
+\hline
+{\em turn} & numero del turno corrente\\
+\hline
+\end{DoxyParams}
+Restituisce 1 se il giocatore che muove è abilitato a farlo, 0 altrimenti. \mbox{\Hypertarget{group___logiche_ga1d493fc60e6ea052243bc1c0e0c20adc}\label{group___logiche_ga1d493fc60e6ea052243bc1c0e0c20adc}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!is\_same\_team@{is\_same\_team}}
+\index{is\_same\_team@{is\_same\_team}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{is\_same\_team()}{is\_same\_team()}}
+{\footnotesize\ttfamily int is\+\_\+same\+\_\+team (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{a,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Verifica che due pedine siano della stessa squadra. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em a} & prima pedina \\
+\hline
+{\em b} & seconda pedina\\
+\hline
+\end{DoxyParams}
+Restituisce 1 se le due pedine a e appartengono alla stessa squadra \mbox{\Hypertarget{group___logiche_gad76287dc287b54276099f0887d416caa}\label{group___logiche_gad76287dc287b54276099f0887d416caa}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!is\_valid\_distance@{is\_valid\_distance}}
+\index{is\_valid\_distance@{is\_valid\_distance}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_distance()}{is\_valid\_distance()}}
+{\footnotesize\ttfamily int is\+\_\+valid\+\_\+distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{from,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{to }\end{DoxyParamCaption})}
+
+
+
+Verifica che la validità della lunghezza della mossa. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em from} & punto di partenza della pedina \\
+\hline
+{\em to} & punto di arrivo della pedina\\
+\hline
+\end{DoxyParams}
+Restituisce 1 se la distanza della mossa è valida, 0 altrimenti. \mbox{\Hypertarget{group___logiche_ga344630622a81e477d50fe7824da45500}\label{group___logiche_ga344630622a81e477d50fe7824da45500}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!is\_valid\_move@{is\_valid\_move}}
+\index{is\_valid\_move@{is\_valid\_move}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_move()}{is\_valid\_move()}}
+{\footnotesize\ttfamily int is\+\_\+valid\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{from,  }\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{to,  }\item[{int}]{turn }\end{DoxyParamCaption})}
+
+
+
+Verifica che la mossa selezionata sia legale. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em from} & punto di partenza della pedina \\
+\hline
+{\em to} & punto di arrivo della pedina \\
+\hline
+{\em turn} & numero del turno corrente\\
+\hline
+\end{DoxyParams}
+Restituisce 1 se la mossa from-\/$>$to è valida, 0 altrimenti. \mbox{\Hypertarget{group___logiche_ga8ca66b4e8b4e7f4511943aac8edde162}\label{group___logiche_ga8ca66b4e8b4e7f4511943aac8edde162}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!isForbiddenCell@{isForbiddenCell}}
+\index{isForbiddenCell@{isForbiddenCell}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{isForbiddenCell()}{isForbiddenCell()}}
+{\footnotesize\ttfamily int is\+Forbidden\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a451dd2984edbf81c9db421e898b39ef9}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Verifica che la cella sia accessibile. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em p} & punto in cui si trova la pedina nella scacchiera\\
+\hline
+\end{DoxyParams}
+Restituisce 1 se la cella non è accessibile (si possono usare solo le celle bianche della scacchiera), altrimenti 0. \mbox{\Hypertarget{group___logiche_ga0b5b57b74dd64318663e80224db22a29}\label{group___logiche_ga0b5b57b74dd64318663e80224db22a29}} 
+\index{Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}!isWinner@{isWinner}}
+\index{isWinner@{isWinner}!Funzioni delle logiche di gioco@{Funzioni delle logiche di gioco}}
+\doxysubsubsection{\texorpdfstring{isWinner()}{isWinner()}}
+{\footnotesize\ttfamily int is\+Winner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board,  }\item[{\mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}}}]{id\+Player }\end{DoxyParamCaption})}
+
+
+
+Verifica che il giocatore {\itshape player} abbia vinto. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera \\
+\hline
+{\em player} & giocatore selezionato\\
+\hline
+\end{DoxyParams}
+Verifica che playertore {\itshape id\+Player} abbia vinto. Restituisce 1 se id\+Player ha vinto, altrimenti 0. 

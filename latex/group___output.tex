@@ -1,0 +1,97 @@
+\hypertarget{group___output}{}\doxysection{Funzioni di output}
+\label{group___output}\index{Funzioni di output@{Funzioni di output}}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___output_ga724261d45664de95115edbec3fec7aef}{print\+Pedina}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Stampa una lettera rappresentante la pedina. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___output_gac5423849c2701b9adbd33225a8a20288}{print\+Matrix}} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}})
+\begin{DoxyCompactList}\small\item\em Stampa la scacchiera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___output_gab1b6c72fb86f8d1c4537fec2456e4c78}{print\+Status}} (int turn)
+\begin{DoxyCompactList}\small\item\em Stampa lo stato del gioco. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___output_ga24e7114025f82d3a3a186743a6e5799f}{print\+Rules}} (void)
+\begin{DoxyCompactList}\small\item\em Stampa le regole del gioco. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___output_ga126ef35a3cacdc550c03a737bf1311bf}{victory}} (\mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}} winner)
+\begin{DoxyCompactList}\small\item\em Schermata di vittoria. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group___output_ga6d8a8483d8971d69c75aea3630453524}\label{group___output_ga6d8a8483d8971d69c75aea3630453524}} 
+void {\bfseries move\+Error} (\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$\mbox{\hyperlink{ml__main_8c_a62a3fe3d1df9ff58883b669f7f24e516}{board}}, int cord\mbox{[}4\mbox{]}, int turn)
+\item 
+\mbox{\Hypertarget{group___output_gaf9264c6e7274d9ba5d85290edf03c3a5}\label{group___output_gaf9264c6e7274d9ba5d85290edf03c3a5}} 
+void {\bfseries input\+Error} (int cord\mbox{[}4\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{group___output_gac5423849c2701b9adbd33225a8a20288}\label{group___output_gac5423849c2701b9adbd33225a8a20288}} 
+\index{Funzioni di output@{Funzioni di output}!printMatrix@{printMatrix}}
+\index{printMatrix@{printMatrix}!Funzioni di output@{Funzioni di output}}
+\doxysubsubsection{\texorpdfstring{printMatrix()}{printMatrix()}}
+{\footnotesize\ttfamily void print\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$$\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Stampa la scacchiera. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em board} & matrice linearizzata della scacchiera\\
+\hline
+\end{DoxyParams}
+Funzione che stampa la scacchiera con una cornice che definisce le coordinate. \mbox{\Hypertarget{group___output_ga724261d45664de95115edbec3fec7aef}\label{group___output_ga724261d45664de95115edbec3fec7aef}} 
+\index{Funzioni di output@{Funzioni di output}!printPedina@{printPedina}}
+\index{printPedina@{printPedina}!Funzioni di output@{Funzioni di output}}
+\doxysubsubsection{\texorpdfstring{printPedina()}{printPedina()}}
+{\footnotesize\ttfamily void print\+Pedina (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a71fee95122b31f5cb0b07d9c16ffa3a5}{pedina}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Stampa una lettera rappresentante la pedina. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em p} & puntatore alla pedina\\
+\hline
+\end{DoxyParams}
+Stampa un carattere ASCII identificativo del contenuto della casella p\+: 
+\begin{DoxyItemize}
+\item b/n se il giocatore è bianco o nero ( {\itshape Umano} / {\itshape Ai}). 
+\item maiuscola/minuscola se la pedina è ufficiale/soldato. 
+\end{DoxyItemize}\mbox{\Hypertarget{group___output_ga24e7114025f82d3a3a186743a6e5799f}\label{group___output_ga24e7114025f82d3a3a186743a6e5799f}} 
+\index{Funzioni di output@{Funzioni di output}!printRules@{printRules}}
+\index{printRules@{printRules}!Funzioni di output@{Funzioni di output}}
+\doxysubsubsection{\texorpdfstring{printRules()}{printRules()}}
+{\footnotesize\ttfamily void print\+Rules (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Stampa le regole del gioco. 
+
+Stampa le regole del gioco. \mbox{\Hypertarget{group___output_gab1b6c72fb86f8d1c4537fec2456e4c78}\label{group___output_gab1b6c72fb86f8d1c4537fec2456e4c78}} 
+\index{Funzioni di output@{Funzioni di output}!printStatus@{printStatus}}
+\index{printStatus@{printStatus}!Funzioni di output@{Funzioni di output}}
+\doxysubsubsection{\texorpdfstring{printStatus()}{printStatus()}}
+{\footnotesize\ttfamily void print\+Status (\begin{DoxyParamCaption}\item[{int}]{turn }\end{DoxyParamCaption})}
+
+
+
+Stampa lo stato del gioco. 
+
+
+\begin{DoxyParams}{Parametri}
+{\em turn} & numero dei turni passati\\
+\hline
+\end{DoxyParams}
+Stampa lo status del gioco (numero del turno e giocatore che deve muovere). \mbox{\Hypertarget{group___output_ga126ef35a3cacdc550c03a737bf1311bf}\label{group___output_ga126ef35a3cacdc550c03a737bf1311bf}} 
+\index{Funzioni di output@{Funzioni di output}!victory@{victory}}
+\index{victory@{victory}!Funzioni di output@{Funzioni di output}}
+\doxysubsubsection{\texorpdfstring{victory()}{victory()}}
+{\footnotesize\ttfamily void victory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ml__lib_8h_a0330ff92cbc796e96c3ce3e4401bf1e1}{id\+\_\+p}}}]{winner }\end{DoxyParamCaption})}
+
+
+
+Schermata di vittoria. 
+
+Stampa il vincitore del gioco. 
