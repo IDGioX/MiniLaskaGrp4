@@ -249,6 +249,21 @@ void fillBoard(pedina **board);
 */
 int catchInput(int *cord /*, pedina **board */);
 
+
+/*! \fn int getMode(void)
+*   \brief Selettore delle due modalità di gioco
+*
+*     Funzione che chiede di selezionare modalità player vs player oppure player vs CPU
+*/
+int getMode(void);
+
+/*! \fn getDepth(void)
+*   \brief Ritorna il livello di difficolta della CPU
+*    Chiede al player di inserire il livello di difficolta della CPU
+*/
+int getDepth(void);
+
+
 /**@}*/
 
 /*---------------------------------SEZIONE FUNZIONI OUTPUT---------------------------------*/

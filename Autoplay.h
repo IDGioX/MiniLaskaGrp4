@@ -38,10 +38,11 @@ struct s_node_list {
 *   \brief Acquisice input modalità Player vs CPU
 *   \param board matrice linearizzata della scacchiera
 *   \param turn numero del turno corrente
+*   \param depth difficoltà della CPU
 *
 *    Ritorna il valore della funzione "my_move": 1 mossa riuscita, 0 altrimenti.
 */
-int catchInput_Autoplay(pedina **board, int turn);
+int catchInput_Autoplay(pedina **board, int turn, int depth);
 
 /*! \fn can_be_eaten(pedina **board, point p)
 *   \brief Verifica se pedina può essere mangiata

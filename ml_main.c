@@ -23,6 +23,8 @@ int Turn = 0; /*!< Contatore del turno corrente */
 
 int Mode;  /*!< Modalità di gioco*/
 
+int Depth; /*!< Difficoltà della CPU*/
+
 point From,To; /*!< Segnaposto dei punti di partenza e arrivo di ogni mossa */
 
 /*! \fn main()
@@ -37,11 +39,11 @@ int main(){
 
     fillBoard(board);
 
-    /*printRules();*/
+    /**/
     
     do{
-        printf("Seleziona la modalità di gioco: ");
-        success_input = scanf("%d",&Mode);
+        Mode=getMode();
+        //success_input = scanf("%d",&Mode);
         printf("\n");
         if(Mode == 1){/*1vs1*/
             do{
@@ -80,9 +82,12 @@ int main(){
                 victory(Ai);
                 
         }else if(Mode == 2){/*1vsCPU*/
+            
+            Depth = getDepth();
+            
             do{
                 do{
-
+                    
                     printStatus(Turn); /*Status giocatore + n°Turno */
                     printMatrix(board); /*Status scacchiera */
 
@@ -92,7 +97,7 @@ int main(){
                         inputError(coordinate);
                     
                     if(Turn%2){
-                        success_move = catchInput_Autoplay(board, Turn); /*Input autoplay*/
+                        success_move = catchInput_Autoplay(board, Turn, Depth); /*Input autoplay*/
                     }
                     else{
                         success_input = catchInput(coordinate);
@@ -114,7 +119,7 @@ int main(){
                 victory(Ai);
             
         }else if(Mode == 3){
-            /*Credits*/
+            printRules();
         }
         else{
             /*Exits*/
@@ -122,7 +127,6 @@ int main(){
         }
         
     }while(Mode != 4);
-    
     
     /*Liberazione memoria*/
     destroyMatrix(board);
