@@ -220,7 +220,7 @@ int catchInput(int cord[4]){
 */
 int getMode(void){
     int mode;
-    printf("\nPer selezionare la modalità player 1 vs player 2 premi '1';\n\nPer selezionare la modalità player vs CPU premi '2';\n\nPer i crediti premi '3';\n\nModalità: ");
+    printf("\nPer selezionare la modalità player 1 vs player 2 premi '1';\n\nPer selezionare la modalità player vs CPU premi '2';\n\nPer le regole e i crediti premi '3';\n\nModalità: ");
     scanf("%d",&mode);
     return mode;
 }
