@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MiniLaska:  File sorgente /Users/giovanni/Desktop/ML_V1/ML_V1/ml_lib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MiniLaska
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_02a13756e87f129fe1ce425d60bc2673.html">ML_V1</a></li><li class="navelem"><a class="el" href="dir_ed3e19adbcdbbe8d2694822c2050f0d0.html">ML_V1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ml_lib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ml__lib_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="ml__lib_8h.html#a71fee95122b31f5cb0b07d9c16ffa3a5">    1</a></span>&#160;<span class="preprocessor">#ifndef ml_lib_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ml_lib_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*---------------------------------SEZIONE DEFINIZIONI---------------------------------*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define ROW 7</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define COL 7</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">   20</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {Umano, Ai} <a class="code" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="ml__lib_8h.html#a25f6e8adc446355e3f42092ecf9d598c">   23</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {Soldier, Officer} <a class="code" href="ml__lib_8h.html#a25f6e8adc446355e3f42092ecf9d598c">gr</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="ml__lib_8h.html#a4ca269cf93df1b512b52174c1a256fe5">   26</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {Up, Down} <a class="code" href="ml__lib_8h.html#a4ca269cf93df1b512b52174c1a256fe5">dir</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcella.html">cella</a> <a class="code" href="structcella.html">pedina</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpunto.html">punto</a> <a class="code" href="structpunto.html">point</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structcella.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcella.html">cella</a>{</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structcella.html#a7cf7cebae17473f8d52d515a2a400dfe">   36</a></span>&#160;    <a class="code" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a> <a class="code" href="structcella.html#a7cf7cebae17473f8d52d515a2a400dfe">id_player</a>;   <span class="comment">/*BIANCHI = 0, NERI = 1*/</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structcella.html#a79404d480b96b227ce1fca8cfca5ea66">   37</a></span>&#160;    <a class="code" href="ml__lib_8h.html#a25f6e8adc446355e3f42092ecf9d598c">gr</a> <a class="code" href="structcella.html#a79404d480b96b227ce1fca8cfca5ea66">grado</a>; <span class="comment">/*SOLDATO = 0, UFFICIALE = 1*/</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structcella.html#aee3fa6fae5c1685708b80a7dca8fafd7">   38</a></span>&#160;    <a class="code" href="structcella.html">pedina</a> *<a class="code" href="structcella.html#aee3fa6fae5c1685708b80a7dca8fafd7">middle</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structcella.html#a91897ce70af7b66dfca5de2141a8718d">   39</a></span>&#160;    <a class="code" href="structcella.html">pedina</a> *<a class="code" href="structcella.html#a91897ce70af7b66dfca5de2141a8718d">down</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structpunto.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpunto.html">punto</a>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structpunto.html#a258126d731de858fa7dc4a24f83c3f7d">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpunto.html#a258126d731de858fa7dc4a24f83c3f7d">x</a>; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structpunto.html#a31195a01422c6e9574235d9b0bf8d285">   45</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpunto.html#a31195a01422c6e9574235d9b0bf8d285">y</a>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">* ASSUNZIONI LOGICHE FONDAMENTALI:</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">*     L&#39;utente muove sempre per primo</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">*     Se il giocatore ha la possibilità di catturare una pedina, è obbligato a farlo</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/*---------------------------------SEZIONE FUNZIONI AUSILIARIE---------------------------------*/</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___ausiliarie.html#gabbdcb7fca0fe313ecc63bc2ba1a73d8e">set_id_player</a>(<a class="code" href="structcella.html">pedina</a> *p, <a class="code" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a> value);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a> <a class="code" href="group___ausiliarie.html#gaeebe06189e2bd221a0e65b7d15f6b1b5">get_id_player</a>(<a class="code" href="structcella.html">pedina</a> *p);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___ausiliarie.html#ga39c663b743546e37a5bbb2f9d1adfd2b">set_board_value</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> p, <a class="code" href="structcella.html">pedina</a> *value);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="structcella.html">pedina</a>* <a class="code" href="group___ausiliarie.html#gacbcceb01143b3098ac3ee65642d94a35">get_board_value</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> p);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="structcella.html">pedina</a>* <a class="code" href="group___ausiliarie.html#ga7abcaeb9a9964698ffa11f5f86805909">get_board_value_immediate</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="structcella.html">pedina</a>* <a class="code" href="group___ausiliarie.html#ga1e5f458cec21fb109ef5cff56b57f389">get_board_value_middle</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> p);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="structcella.html">pedina</a>* <a class="code" href="group___ausiliarie.html#gacde6d4e847576a401af96d1d84733533">get_board_value_down</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> p);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___ausiliarie.html#ga663d3a2fcf86042d03eb834766b7adea">set_grade</a>(<a class="code" href="structcella.html">pedina</a> *p,<a class="code" href="ml__lib_8h.html#a25f6e8adc446355e3f42092ecf9d598c">gr</a> value);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<a class="code" href="ml__lib_8h.html#a25f6e8adc446355e3f42092ecf9d598c">gr</a> <a class="code" href="group___ausiliarie.html#ga6ceb2e2fb4d39456d2b64b64f4841c67">get_grade</a>(<a class="code" href="structcella.html">pedina</a> *p);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___ausiliarie.html#ga4b841e4128740b9fa11d44d180891c13">is_inside</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keywordtype">int</span> right_path(<a class="code" href="ml__lib_8h.html#a4ca269cf93df1b512b52174c1a256fe5">dir</a> direction, <a class="code" href="ml__lib_8h.html#a25f6e8adc446355e3f42092ecf9d598c">gr</a> grade, <a class="code" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a> player);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___ausiliarie.html#ga91afc9e4c2346f1ec103f49db8dbe120">is_valid_letter</a>(<span class="keywordtype">char</span> input);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___ausiliarie.html#ga5c86a430960ee2966594c15c0274c3a5">is_valid_number</a>(<span class="keywordtype">char</span> input);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___ausiliarie.html#ga934cd52cb22c3138965a1ed6cf28b93c">is_valid_input</a>(<span class="keywordtype">char</span> input[5]);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<a class="code" href="structpunto.html">point</a> <a class="code" href="group___ausiliarie.html#gaa4ac4a8fb827cc4ddb366f948d2ddab9">add_point</a>(<a class="code" href="structpunto.html">point</a> p, <a class="code" href="structpunto.html">point</a> l);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">/*---------------------------------SEZIONE FUNZIONI GESTIONE MEMORIA---------------------------------*/</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<a class="code" href="structcella.html">pedina</a> **<a class="code" href="group___memoria.html#gab9607896ed7aebf86c8a7ac51fe5a618">createMatrix</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<a class="code" href="structcella.html">pedina</a>** cloneMatrix(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___memoria.html#ga898a4ffd57725b4666aa768ca71f1e1f">destroyMatrix</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___memoria.html#ga421a28d47106a4070c6eea92c1401821">fillBoard</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">/*---------------------------------SEZIONE FUNZIONI INPUT---------------------------------*/</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keywordtype">int</span> catchInput(<span class="keywordtype">int</span> *cord <span class="comment">/*, pedina **board */</span>);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">/*---------------------------------SEZIONE FUNZIONI OUTPUT---------------------------------*/</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___output.html#ga724261d45664de95115edbec3fec7aef">printPedina</a>(<a class="code" href="structcella.html">pedina</a> *p);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___output.html#gac5423849c2701b9adbd33225a8a20288">printMatrix</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___output.html#gab1b6c72fb86f8d1c4537fec2456e4c78">printStatus</a>(<span class="keywordtype">int</span> turn);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___output.html#ga24e7114025f82d3a3a186743a6e5799f">printRules</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___output.html#ga126ef35a3cacdc550c03a737bf1311bf">victory</a>(<a class="code" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a> winner);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keywordtype">void</span> moveError(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <span class="keywordtype">int</span> cord[4], <span class="keywordtype">int</span> turn);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keywordtype">void</span> inputError(<span class="keywordtype">int</span> cord[4]);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">/*---------------------------------SEZIONE FUNZIONI LOGICHE DI GIOCO---------------------------------*/</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#ga1d493fc60e6ea052243bc1c0e0c20adc">is_same_team</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> a, <a class="code" href="structpunto.html">point</a> b);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#ga9bbb95ac94db737e2095fc03a7eb2cef">is_legal_player</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> from, <span class="keywordtype">int</span> turn);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#ga0519397afc131ba8216279b7c8d6c5cc">is_empty</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> x);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#gae7e726a728c55ba691bb6c1462c71989">is_full</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> x);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#gad76287dc287b54276099f0887d416caa">is_valid_distance</a>(<a class="code" href="structpunto.html">point</a> from, <a class="code" href="structpunto.html">point</a> to);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#ga344630622a81e477d50fe7824da45500">is_valid_move</a>(<a class="code" href="structcella.html">pedina</a>** <a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> from, <a class="code" href="structpunto.html">point</a> to, <span class="keywordtype">int</span> turn);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___logiche.html#ga849f32b6994fbb1190073cde39703ee4">increase_grade</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> soldier);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#ga0b5b57b74dd64318663e80224db22a29">isWinner</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a> player);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#ga8ca66b4e8b4e7f4511943aac8edde162">isForbiddenCell</a>(<a class="code" href="structpunto.html">point</a> p);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="keywordtype">int</span> my_move(<a class="code" href="structcella.html">pedina</a>** <a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> from, <a class="code" href="structpunto.html">point</a> to, <span class="keywordtype">int</span> turn);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#gabcbd7b41508ab908b601d6607330190f">distance</a>(<a class="code" href="structpunto.html">point</a> from, <a class="code" href="structpunto.html">point</a> to);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___logiche.html#ga373ce247f8d712b22dd6db6b5aaeb77c">capture</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> from, <a class="code" href="structpunto.html">point</a> to);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#ga92e065216878c6972f25bb40cede5a3f">gradeCheck</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> from, <a class="code" href="structpunto.html">point</a> to);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#gae47a85e51124bf1b5569559ba5718bb6">can_eat</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> p);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#ga8cc7e93c7f87a22d21412b3ca1f942e6">can_move</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> p);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___logiche.html#gaf5deae59415fab0cf7de74362d4b56e6">existMandatory</a>(<a class="code" href="structcella.html">pedina</a> **<a class="code" href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a>, <a class="code" href="structpunto.html">point</a> from, <a class="code" href="structpunto.html">point</a> to);</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ml_lib_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga1e5f458cec21fb109ef5cff56b57f389"><div class="ttname"><a href="group___ausiliarie.html#ga1e5f458cec21fb109ef5cff56b57f389">get_board_value_middle</a></div><div class="ttdeci">pedina * get_board_value_middle(pedina **board, point p)</div><div class="ttdoc">Ritorna la pedina &quot;middle&quot; contenuta nella posizione x , y di board.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:33</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga39c663b743546e37a5bbb2f9d1adfd2b"><div class="ttname"><a href="group___ausiliarie.html#ga39c663b743546e37a5bbb2f9d1adfd2b">set_board_value</a></div><div class="ttdeci">void set_board_value(pedina **board, point p, pedina *value)</div><div class="ttdoc">Imposta la pedina value nella posizione x , y nella scacchiera board.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:18</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga4b841e4128740b9fa11d44d180891c13"><div class="ttname"><a href="group___ausiliarie.html#ga4b841e4128740b9fa11d44d180891c13">is_inside</a></div><div class="ttdeci">int is_inside(int x, int y)</div><div class="ttdoc">Indica se x, \ay è dentro alla scacchiera.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:59</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga5c86a430960ee2966594c15c0274c3a5"><div class="ttname"><a href="group___ausiliarie.html#ga5c86a430960ee2966594c15c0274c3a5">is_valid_number</a></div><div class="ttdeci">int is_valid_number(char input)</div><div class="ttdoc">Verifica che input sia un numero.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:74</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga663d3a2fcf86042d03eb834766b7adea"><div class="ttname"><a href="group___ausiliarie.html#ga663d3a2fcf86042d03eb834766b7adea">set_grade</a></div><div class="ttdeci">void set_grade(pedina *p, gr value)</div><div class="ttdoc">Imposta il grado value della pedina indicata dal puntatore p.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:49</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga6ceb2e2fb4d39456d2b64b64f4841c67"><div class="ttname"><a href="group___ausiliarie.html#ga6ceb2e2fb4d39456d2b64b64f4841c67">get_grade</a></div><div class="ttdeci">gr get_grade(pedina *p)</div><div class="ttdoc">Ritorna il grado value della pedina indicata dal puntatore p.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:54</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga7abcaeb9a9964698ffa11f5f86805909"><div class="ttname"><a href="group___ausiliarie.html#ga7abcaeb9a9964698ffa11f5f86805909">get_board_value_immediate</a></div><div class="ttdeci">pedina * get_board_value_immediate(pedina **board, int x, int y)</div><div class="ttdoc">Ritorna la pedina contenuta nella posizione x , y di board.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:28</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga91afc9e4c2346f1ec103f49db8dbe120"><div class="ttname"><a href="group___ausiliarie.html#ga91afc9e4c2346f1ec103f49db8dbe120">is_valid_letter</a></div><div class="ttdeci">int is_valid_letter(char input)</div><div class="ttdoc">Verifica che input sia una lettera.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:69</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_ga934cd52cb22c3138965a1ed6cf28b93c"><div class="ttname"><a href="group___ausiliarie.html#ga934cd52cb22c3138965a1ed6cf28b93c">is_valid_input</a></div><div class="ttdeci">int is_valid_input(char input[5])</div><div class="ttdoc">Verifica che la stringa in input sia valida.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:79</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_gaa4ac4a8fb827cc4ddb366f948d2ddab9"><div class="ttname"><a href="group___ausiliarie.html#gaa4ac4a8fb827cc4ddb366f948d2ddab9">add_point</a></div><div class="ttdeci">point add_point(point p, point l)</div><div class="ttdoc">Modifica lo stato di un punto.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:83</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_gabbdcb7fca0fe313ecc63bc2ba1a73d8e"><div class="ttname"><a href="group___ausiliarie.html#gabbdcb7fca0fe313ecc63bc2ba1a73d8e">set_id_player</a></div><div class="ttdeci">void set_id_player(pedina *p, id_p value)</div><div class="ttdoc">Imposta l'id_player value della pedina indicata dal puntatore *p.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:8</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_gacbcceb01143b3098ac3ee65642d94a35"><div class="ttname"><a href="group___ausiliarie.html#gacbcceb01143b3098ac3ee65642d94a35">get_board_value</a></div><div class="ttdeci">pedina * get_board_value(pedina **board, point p)</div><div class="ttdoc">Ritorna la pedina contenuta nella posizione x , y di board.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:23</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_gacde6d4e847576a401af96d1d84733533"><div class="ttname"><a href="group___ausiliarie.html#gacde6d4e847576a401af96d1d84733533">get_board_value_down</a></div><div class="ttdeci">pedina * get_board_value_down(pedina **board, point p)</div><div class="ttdoc">Ritorna la pedina &quot;down&quot; contenuta nella posizione x, y di board.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:41</div></div>
+<div class="ttc" id="agroup___ausiliarie_html_gaeebe06189e2bd221a0e65b7d15f6b1b5"><div class="ttname"><a href="group___ausiliarie.html#gaeebe06189e2bd221a0e65b7d15f6b1b5">get_id_player</a></div><div class="ttdeci">id_p get_id_player(pedina *p)</div><div class="ttdoc">Ritorna id_player dalla pedina *p specificata.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:13</div></div>
+<div class="ttc" id="agroup___logiche_html_ga0519397afc131ba8216279b7c8d6c5cc"><div class="ttname"><a href="group___logiche.html#ga0519397afc131ba8216279b7c8d6c5cc">is_empty</a></div><div class="ttdeci">int is_empty(pedina **board, point x)</div><div class="ttdoc">Verifica che casella sia vuota.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:348</div></div>
+<div class="ttc" id="agroup___logiche_html_ga0b5b57b74dd64318663e80224db22a29"><div class="ttname"><a href="group___logiche.html#ga0b5b57b74dd64318663e80224db22a29">isWinner</a></div><div class="ttdeci">int isWinner(pedina **board, id_p player)</div><div class="ttdoc">Verifica che il giocatore player abbia vinto.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:401</div></div>
+<div class="ttc" id="agroup___logiche_html_ga1d493fc60e6ea052243bc1c0e0c20adc"><div class="ttname"><a href="group___logiche.html#ga1d493fc60e6ea052243bc1c0e0c20adc">is_same_team</a></div><div class="ttdeci">int is_same_team(pedina **board, point a, point b)</div><div class="ttdoc">Verifica che due pedine siano della stessa squadra.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:340</div></div>
+<div class="ttc" id="agroup___logiche_html_ga344630622a81e477d50fe7824da45500"><div class="ttname"><a href="group___logiche.html#ga344630622a81e477d50fe7824da45500">is_valid_move</a></div><div class="ttdeci">int is_valid_move(pedina **board, point from, point to, int turn)</div><div class="ttdoc">Verifica che la mossa selezionata sia legale.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:364</div></div>
+<div class="ttc" id="agroup___logiche_html_ga373ce247f8d712b22dd6db6b5aaeb77c"><div class="ttname"><a href="group___logiche.html#ga373ce247f8d712b22dd6db6b5aaeb77c">capture</a></div><div class="ttdeci">void capture(pedina **board, point from, point to)</div><div class="ttdoc">Esegue la cattura delle pedine.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:486</div></div>
+<div class="ttc" id="agroup___logiche_html_ga849f32b6994fbb1190073cde39703ee4"><div class="ttname"><a href="group___logiche.html#ga849f32b6994fbb1190073cde39703ee4">increase_grade</a></div><div class="ttdeci">void increase_grade(pedina **board, point soldier)</div><div class="ttdoc">Verifica che la pedina soldier sia sa promuovere.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:384</div></div>
+<div class="ttc" id="agroup___logiche_html_ga8ca66b4e8b4e7f4511943aac8edde162"><div class="ttname"><a href="group___logiche.html#ga8ca66b4e8b4e7f4511943aac8edde162">isForbiddenCell</a></div><div class="ttdeci">int isForbiddenCell(point p)</div><div class="ttdoc">Verifica che la cella sia accessibile.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:145</div></div>
+<div class="ttc" id="agroup___logiche_html_ga8cc7e93c7f87a22d21412b3ca1f942e6"><div class="ttname"><a href="group___logiche.html#ga8cc7e93c7f87a22d21412b3ca1f942e6">can_move</a></div><div class="ttdeci">int can_move(pedina **board, point p)</div><div class="ttdoc">Verifica la possibilità di muoversi.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:610</div></div>
+<div class="ttc" id="agroup___logiche_html_ga92e065216878c6972f25bb40cede5a3f"><div class="ttname"><a href="group___logiche.html#ga92e065216878c6972f25bb40cede5a3f">gradeCheck</a></div><div class="ttdeci">int gradeCheck(pedina **board, point from, point to)</div><div class="ttdoc">Verifica che la mossa selezionata sia compatibile con il grado della pedina.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:546</div></div>
+<div class="ttc" id="agroup___logiche_html_ga9bbb95ac94db737e2095fc03a7eb2cef"><div class="ttname"><a href="group___logiche.html#ga9bbb95ac94db737e2095fc03a7eb2cef">is_legal_player</a></div><div class="ttdeci">int is_legal_player(pedina **board, point from, int turn)</div><div class="ttdoc">Verifica che il giocatore sia corretto.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:344</div></div>
+<div class="ttc" id="agroup___logiche_html_gabcbd7b41508ab908b601d6607330190f"><div class="ttname"><a href="group___logiche.html#gabcbd7b41508ab908b601d6607330190f">distance</a></div><div class="ttdeci">int distance(point from, point to)</div><div class="ttdoc">Restituisce un codice che descrive la lunghezza della mossa.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:468</div></div>
+<div class="ttc" id="agroup___logiche_html_gad76287dc287b54276099f0887d416caa"><div class="ttname"><a href="group___logiche.html#gad76287dc287b54276099f0887d416caa">is_valid_distance</a></div><div class="ttdeci">int is_valid_distance(point from, point to)</div><div class="ttdoc">Verifica che la validità della lunghezza della mossa.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:356</div></div>
+<div class="ttc" id="agroup___logiche_html_gae47a85e51124bf1b5569559ba5718bb6"><div class="ttname"><a href="group___logiche.html#gae47a85e51124bf1b5569559ba5718bb6">can_eat</a></div><div class="ttdeci">int can_eat(pedina **board, point p)</div><div class="ttdoc">Verifica la possibilità di mangiare.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:578</div></div>
+<div class="ttc" id="agroup___logiche_html_gae7e726a728c55ba691bb6c1462c71989"><div class="ttname"><a href="group___logiche.html#gae7e726a728c55ba691bb6c1462c71989">is_full</a></div><div class="ttdeci">int is_full(pedina **board, point x)</div><div class="ttdoc">Verifica che casella sia piena.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:352</div></div>
+<div class="ttc" id="agroup___logiche_html_gaf5deae59415fab0cf7de74362d4b56e6"><div class="ttname"><a href="group___logiche.html#gaf5deae59415fab0cf7de74362d4b56e6">existMandatory</a></div><div class="ttdeci">int existMandatory(pedina **board, point from, point to)</div><div class="ttdoc">Controlla la presenza di mosse obbligatorie.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:640</div></div>
+<div class="ttc" id="agroup___memoria_html_ga421a28d47106a4070c6eea92c1401821"><div class="ttname"><a href="group___memoria.html#ga421a28d47106a4070c6eea92c1401821">fillBoard</a></div><div class="ttdeci">void fillBoard(pedina **board)</div><div class="ttdoc">Riempie la scacchiera con le pedine.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:158</div></div>
+<div class="ttc" id="agroup___memoria_html_ga898a4ffd57725b4666aa768ca71f1e1f"><div class="ttname"><a href="group___memoria.html#ga898a4ffd57725b4666aa768ca71f1e1f">destroyMatrix</a></div><div class="ttdeci">void destroyMatrix(pedina **board)</div><div class="ttdoc">Distrugge la matrice della scacchiera.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:138</div></div>
+<div class="ttc" id="agroup___memoria_html_gab9607896ed7aebf86c8a7ac51fe5a618"><div class="ttname"><a href="group___memoria.html#gab9607896ed7aebf86c8a7ac51fe5a618">createMatrix</a></div><div class="ttdeci">pedina ** createMatrix(void)</div><div class="ttdoc">Funzione che crea la matrice della scacchiera.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:94</div></div>
+<div class="ttc" id="agroup___output_html_ga126ef35a3cacdc550c03a737bf1311bf"><div class="ttname"><a href="group___output.html#ga126ef35a3cacdc550c03a737bf1311bf">victory</a></div><div class="ttdeci">void victory(id_p winner)</div><div class="ttdoc">Schermata di vittoria.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:314</div></div>
+<div class="ttc" id="agroup___output_html_ga24e7114025f82d3a3a186743a6e5799f"><div class="ttname"><a href="group___output.html#ga24e7114025f82d3a3a186743a6e5799f">printRules</a></div><div class="ttdeci">void printRules(void)</div><div class="ttdoc">Stampa le regole del gioco.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:289</div></div>
+<div class="ttc" id="agroup___output_html_ga724261d45664de95115edbec3fec7aef"><div class="ttname"><a href="group___output.html#ga724261d45664de95115edbec3fec7aef">printPedina</a></div><div class="ttdeci">void printPedina(pedina *p)</div><div class="ttdoc">Stampa una lettera rappresentante la pedina.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:225</div></div>
+<div class="ttc" id="agroup___output_html_gab1b6c72fb86f8d1c4537fec2456e4c78"><div class="ttname"><a href="group___output.html#gab1b6c72fb86f8d1c4537fec2456e4c78">printStatus</a></div><div class="ttdeci">void printStatus(int turn)</div><div class="ttdoc">Stampa lo stato del gioco.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:285</div></div>
+<div class="ttc" id="agroup___output_html_gac5423849c2701b9adbd33225a8a20288"><div class="ttname"><a href="group___output.html#gac5423849c2701b9adbd33225a8a20288">printMatrix</a></div><div class="ttdeci">void printMatrix(pedina **board)</div><div class="ttdoc">Stampa la scacchiera.</div><div class="ttdef"><b>Definition:</b> ml_lib.c:241</div></div>
+<div class="ttc" id="aml__lib_8h_html_a0330ff92cbc796e96c3ce3e4401bf1e1"><div class="ttname"><a href="ml__lib_8h.html#a0330ff92cbc796e96c3ce3e4401bf1e1">id_p</a></div><div class="ttdeci">id_p</div><div class="ttdef"><b>Definition:</b> ml_lib.h:20</div></div>
+<div class="ttc" id="aml__lib_8h_html_a25f6e8adc446355e3f42092ecf9d598c"><div class="ttname"><a href="ml__lib_8h.html#a25f6e8adc446355e3f42092ecf9d598c">gr</a></div><div class="ttdeci">gr</div><div class="ttdef"><b>Definition:</b> ml_lib.h:23</div></div>
+<div class="ttc" id="aml__lib_8h_html_a4ca269cf93df1b512b52174c1a256fe5"><div class="ttname"><a href="ml__lib_8h.html#a4ca269cf93df1b512b52174c1a256fe5">dir</a></div><div class="ttdeci">dir</div><div class="ttdef"><b>Definition:</b> ml_lib.h:26</div></div>
+<div class="ttc" id="aml__main_8c_html_a62a3fe3d1df9ff58883b669f7f24e516"><div class="ttname"><a href="ml__main_8c.html#a62a3fe3d1df9ff58883b669f7f24e516">board</a></div><div class="ttdeci">pedina ** board</div><div class="ttdef"><b>Definition:</b> ml_main.c:12</div></div>
+<div class="ttc" id="astructcella_html"><div class="ttname"><a href="structcella.html">cella</a></div><div class="ttdef"><b>Definition:</b> ml_lib.h:35</div></div>
+<div class="ttc" id="astructcella_html_a79404d480b96b227ce1fca8cfca5ea66"><div class="ttname"><a href="structcella.html#a79404d480b96b227ce1fca8cfca5ea66">cella::grado</a></div><div class="ttdeci">gr grado</div><div class="ttdef"><b>Definition:</b> ml_lib.h:37</div></div>
+<div class="ttc" id="astructcella_html_a7cf7cebae17473f8d52d515a2a400dfe"><div class="ttname"><a href="structcella.html#a7cf7cebae17473f8d52d515a2a400dfe">cella::id_player</a></div><div class="ttdeci">id_p id_player</div><div class="ttdef"><b>Definition:</b> ml_lib.h:36</div></div>
+<div class="ttc" id="astructcella_html_a91897ce70af7b66dfca5de2141a8718d"><div class="ttname"><a href="structcella.html#a91897ce70af7b66dfca5de2141a8718d">cella::down</a></div><div class="ttdeci">pedina * down</div><div class="ttdef"><b>Definition:</b> ml_lib.h:39</div></div>
+<div class="ttc" id="astructcella_html_aee3fa6fae5c1685708b80a7dca8fafd7"><div class="ttname"><a href="structcella.html#aee3fa6fae5c1685708b80a7dca8fafd7">cella::middle</a></div><div class="ttdeci">pedina * middle</div><div class="ttdef"><b>Definition:</b> ml_lib.h:38</div></div>
+<div class="ttc" id="astructpunto_html"><div class="ttname"><a href="structpunto.html">punto</a></div><div class="ttdef"><b>Definition:</b> ml_lib.h:43</div></div>
+<div class="ttc" id="astructpunto_html_a258126d731de858fa7dc4a24f83c3f7d"><div class="ttname"><a href="structpunto.html#a258126d731de858fa7dc4a24f83c3f7d">punto::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> ml_lib.h:44</div></div>
+<div class="ttc" id="astructpunto_html_a31195a01422c6e9574235d9b0bf8d285"><div class="ttname"><a href="structpunto.html#a31195a01422c6e9574235d9b0bf8d285">punto::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> ml_lib.h:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
