@@ -26,10 +26,6 @@ int catchInput_Autoplay(pedina **board, int turn, int depth){
     
     possible_moves = get_moves(board,turn);
     
-    printf("\npossible_moves:\n");
-    print_list(possible_moves);
-    printf("\n");
-    
     for(i = possible_moves; i != NULL; i = i->next){ /*Scorro e valuto tutte le possibili mosse*/
         pedina** new_board;
                 
@@ -42,13 +38,8 @@ int catchInput_Autoplay(pedina **board, int turn, int depth){
     
     result = get_from_list(possible_moves,MAX);
     
-    printf("\nresult:\n");
-    print_t_node(result);
-    printf("\n");
-    
     destroy_list(possible_moves);
     
-    printf("\nVolte richiamo my move catchinput Autoplay\n");
     return my_move(board,result.start,result.end,turn);
     
 }

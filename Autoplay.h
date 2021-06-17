@@ -8,7 +8,6 @@
 
 #define NUMERO_PEDINE 7
 #define MOSSE 8
-#define DEPTH_MAX 7
 
 /*! Definizione struttura t_node*/
 typedef struct s_node t_node;

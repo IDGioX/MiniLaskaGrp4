@@ -197,7 +197,7 @@ int catchInput(int cord[4]){
     char input[5];
     int success = 0;
     do{
-        printf("\tInserisci le coordinate della mossa [LETTERA-NUMERO-LETTERA-NUMERO]: \n\t");
+        printf("\nInserisci le coordinate della mossa [LETTERA-NUMERO-LETTERA-NUMERO]: \n\t");
         
         success = scanf("%s",input);
                 
@@ -227,11 +227,12 @@ int getMode(void){
 
 /*Ritorna il livello di difficoltà della CPU*/
 int getDepth(void){
-    int depth;
-    
-    printf("\nInserisci la difficoltà della CPU: ");
-    scanf("%d",&depth);
-    printf("\n\n");
+    int depth=0;
+    do{
+        printf("\nInserisci la difficoltà della CPU (con un minimo di 1, fino ad un massimo di 7): ");
+        scanf("%d",&depth);
+        printf("\n");
+    }while(depth<1 || depth>7);
     
     return depth;
 }
@@ -548,11 +549,9 @@ void capture(pedina **b, point from, point to){ /*Correggi con funzioni ausiliar
         set_board_value(b,mid,0);
 
         if(soldier->middle && !(soldier->down)){  /*Sistema la pedina catturata nella pedina del catturante*/
-            printf("\n VOLTE IN SOLDIER DOWN CAPTURE\n");
             soldier->down = prisoner;
         }
         else {
-            printf("\n VOLTE IN SOLDIER MIDDLE CAPTURE\n");
             soldier->middle = prisoner;
         }
     }
