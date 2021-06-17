@@ -43,7 +43,6 @@ int main(){
     
     do{
         Mode=getMode();
-        //success_input = scanf("%d",&Mode);
         printf("\n");
         if(Mode == 1){/*1vs1*/
             do{

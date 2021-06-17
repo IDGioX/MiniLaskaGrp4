@@ -418,7 +418,6 @@ void increase_grade(pedina **board, point soldier){
 
 /* Verifica che il giocatore idPlayer abbia vinto
  * Restituisce 1 se idPlayer ha vinto, altrimenti 0
- * TODO: DA RIVEDERE QUANDO TI BLOCCANO
 */
 int isWinner(pedina **board, id_p idPlayer) {
 

@@ -9,16 +9,10 @@
     Officer: Soldier , (1,1) , (-1,1) , (2,2) , (-2,2)
 */
 
-/*TODO:
-1- Obbligo mangiare in select_pedina
-2-
-*/
-
 /*
 * Invoca minimax e restituisce la mossa (start,end) migliore
 */
 
-//inserito nella firma int depth
 int catchInput_Autoplay(pedina **board, int turn, int depth){
     
     t_node result;
@@ -31,7 +25,6 @@ int catchInput_Autoplay(pedina **board, int turn, int depth){
                 
         new_board = cloneMatrix(board);
         
-        //inserita la profondita/difficoltà della CPU
         i->data.value = minimax(new_board,i->data,depth,turn);
         destroyMatrix(new_board);
     }
@@ -314,5 +307,3 @@ int minimax(pedina **board, t_node movement, int depth, int turn){
     
     return alfa;
 }
-
-/*EXPERIMENTAL IMPLEMENTATION*/
