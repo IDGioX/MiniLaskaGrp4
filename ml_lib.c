@@ -222,6 +222,7 @@ int getMode(void){
     int mode;
     printf("\nPer selezionare la modalità player 1 vs player 2 premi '1';\n\nPer selezionare la modalità player vs CPU premi '2';\n\nPer le regole e i crediti premi '3';\n\nModalità: ");
     scanf("%d",&mode);
+    printf("\n");
     return mode;
 }
 
@@ -503,8 +504,7 @@ int distance(point from, point to){
  * Si assume la correttezza delle coordinate inserite, la legalità della mossa è verificata nella funzione move(...).
 */
 
-// richiamata solo nella my_move
-void capture(pedina **b, point from, point to){ /*Correggi con funzioni ausiliarie*/
+void capture(pedina **b, point from, point to){
     point mid;
     pedina *prisoner;
     pedina *soldier;
@@ -562,7 +562,7 @@ void capture(pedina **b, point from, point to){ /*Correggi con funzioni ausiliar
 /* Verifica il grado della pedina mossa:
  * restituisce 1 se la mossa è consentita, 0 se non è consentita
 */
-int gradeCheck(pedina **board, point from, point to){ /*IMPLEMENTA UP/DOWN*/
+int gradeCheck(pedina **board, point from, point to){
 
     int success = 1;
     if(get_board_value(board,from)) { /* controlla se la casella è piena o vuota*/
@@ -581,7 +581,6 @@ int gradeCheck(pedina **board, point from, point to){ /*IMPLEMENTA UP/DOWN*/
             }
         }
     } else {
-        /*printf("\n\n\t\t\t default \n\n");*/
         success = 0;
     }
 

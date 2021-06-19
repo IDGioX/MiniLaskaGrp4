@@ -43,7 +43,7 @@ int main(){
     
     do{
         Mode=getMode();
-        printf("\n");
+        
         if(Mode == 1){/*1vs1*/
             do{
                 do{
@@ -121,7 +121,7 @@ int main(){
             printRules();
         }
         else{
-            /*Exits*/
+            /*Exit*/
             printf("Esco...\n");
         }
         
