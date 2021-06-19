@@ -147,4 +147,4 @@ int minimax(pedina **board, t_node move, int depth, int turn);
 */
 void print_list(t_node_list i);
 
-#endif /* Autoplay_h */
+#endif /* ml_autoplay_h */
