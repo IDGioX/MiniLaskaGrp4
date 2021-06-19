@@ -230,10 +230,10 @@ int getMode(void){
 int getDepth(void){
     int depth=0;
     do{
-        printf("\nInserisci la difficoltà della CPU (con un minimo di 1, fino ad un massimo di 7): ");
+        printf("\nInserisci la difficoltà della CPU (con un minimo di 1, fino ad un massimo di 6): ");
         scanf("%d",&depth);
         printf("\n");
-    }while(depth<1 || depth>7);
+    }while(depth<1 || depth>6);
     
     return depth;
 }
