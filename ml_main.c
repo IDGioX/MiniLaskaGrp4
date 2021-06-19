@@ -8,10 +8,9 @@
 #include <stdlib.h>
 #include "ml_autoplay.h"
 
-
 pedina **board = NULL; /*!< La scacchiera */
 
-point *moves;
+point *moves; /*!< Puntatore a lista contenente le coordinate per la mossa possibile della pedina */
 
 int coordinate[4]; /*!< Array contenente le coordinate di partenza e di arrivo di ogni mossa */
 
@@ -25,7 +24,9 @@ int Mode;  /*!< Modalità di gioco*/
 
 int Depth; /*!< Difficoltà della CPU*/
 
-point From,To; /*!< Segnaposto dei punti di partenza e arrivo di ogni mossa */
+point From; /*!< Segnaposto dei punti di partenza di ogni mossa */
+
+point to; /*!< Segnaposto dei punti di arrivo di ogni mossa */
 
 /*! \fn main()
 *

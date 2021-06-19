@@ -1,6 +1,8 @@
-
-#ifndef ml_autoplay_h
-#define ml_autoplay_h
+/*! \file ml_autoplay.h
+    \brief Header della libreria ml_autoplay
+     *
+    Questo file contiene le definizioni di tutte le strutture e delle funzioni che compongono la libreria ml_autoplay.h
+*/
 
 #include<stdio.h>
 #include<limits.h>
@@ -33,7 +35,7 @@ struct s_node_list {
     t_node_list next;
 };
 
-/*! \fn catchInput_Autoplay(pedina **board, int turn)
+/*! \fn catchInput_Autoplay(pedina **board, int turn, int depth)
 *   \brief Acquisice input modalità Player vs CPU
 *   \param board matrice linearizzata della scacchiera
 *   \param turn numero del turno corrente
@@ -138,13 +140,3 @@ t_node_list get_moves(pedina **board, int turn);
 *   Ritorna una lista con le possibili mosse
 */
 int minimax(pedina **board, t_node move, int depth, int turn);
-
-/*! \fn print_list(t_node_list i)
-*   \brief Esegue una stampa della lista
-*   \param i struttura coppia valore, mossa
-*
-*    Esegue una stampa della lista
-*/
-void print_list(t_node_list i);
-
-#endif /* ml_autoplay_h */

@@ -1,6 +1,3 @@
-#ifndef ml_lib_h
-#define ml_lib_h
-
 /*! \file ml_lib.h
     \brief Header della libreria ml_lib
      *
@@ -149,7 +146,7 @@ gr get_grade(pedina *p);
 */
 int is_inside(int x, int y);
 
-/*! \fn right_path(int direction, gr grade, id_p player)
+/*! \fn right_path(dir direction, gr grade, id_p player)
 *   \brief Indica se la direzione è corretta
 *    \param direction direzione della pedina (1 il basso, 0 l'alto)
 *    \param grade grado della pedina
@@ -208,7 +205,7 @@ point add_point(point p, point l);
 */
 pedina **createMatrix(void);
 
-/*! \fn cloneMatrix(pedina **board, pedina **new_board)
+/*! \fn cloneMatrix(pedina **board)
 *   \brief Clona la matrice contenuta in board nella matrice new_board
 *    \param board matrice linearizzata della scacchiera
 *
@@ -241,13 +238,13 @@ void fillBoard(pedina **board);
  * @{
  */
 
-/*! \fn catchInput(int *cord, pedina **board)
+/*! \fn catchInput(int *cord)
 *   \brief Legge l'input da tastiera
 *    \param cord array contenente le coordinate di partenza e destinazione della pedina
 *
 *     Legge l'input dall'utente e traduce le coordinate in int, che vengono inseriti in un array apposito.
 */
-int catchInput(int *cord /*, pedina **board */);
+int catchInput(int *cord);
 
 
 /*! \fn int getMode(void)
@@ -315,14 +312,14 @@ void printRules(void);
 */
 void victory(id_p winner);
 
-/*! \fn moveError()
+/*! \fn moveError(pedina **board, int cord[4], int turn)
 *    \brief Schermata di errore di gioco
 *
 *    Fornisce informazioni in caso di mossa inserita non corretta.
 */
 void moveError(pedina **board, int cord[4], int turn);
 
-/*! \fn inputError()
+/*! \fn inputError(int cord[4])
 *    \brief Schermata di errore di input
 *
 *    Fornisce informazioni in caso di inserimento dati scorretto.
@@ -423,7 +420,7 @@ int isWinner(pedina **board, id_p player);
 */
 int isForbiddenCell(point p);
 
-/*! \fn move(pedina **p, point from, point to, int turn)
+/*! \fn my_move(pedina **p, point from, point to, int turn)
 *   \brief Verifica che la mossa selezionata sia legale e la esegue
 *   \param board matrice linearizzata della scacchiera
 *   \param from punto di partenza della pedina
@@ -500,6 +497,3 @@ int can_move(pedina **board, point p);
 int existMandatory(pedina **board, point from, point to);
 
 /**@}*/
-
-
-#endif /* ml_lib_h */
