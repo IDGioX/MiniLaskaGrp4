@@ -1,6 +1,6 @@
 
-#ifndef Autoplay_h
-#define Autoplay_h
+#ifndef ml_autoplay_h
+#define ml_autoplay_h
 
 #include<stdio.h>
 #include<limits.h>

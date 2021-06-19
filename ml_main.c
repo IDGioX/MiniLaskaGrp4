@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "Autoplay.h"
+#include "ml_autoplay.h"
 
 
 pedina **board = NULL; /*!< La scacchiera */

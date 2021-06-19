@@ -1,4 +1,4 @@
-#include"Autoplay.h"
+#include"ml_autoplay.h"
 
 /*Ai:
     Soldier: (1,1) , (-1,1) , (2,2) , (-2,2)
